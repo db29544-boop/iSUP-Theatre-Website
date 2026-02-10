@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  z-index: 0;
+}
+
+nav {
+  background-image: url("assets/360_F_135878937_sLm07yCbXbyef1K32kHbZvIsZEX2zoMh.jpg");
+  display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.content-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.content-container img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.presents-text {
+  font-weight: normal;
+}
+
+.hero-text {
+  padding: 10px;
+  background-color: #b20101;
+  border-radius: 10px;
+  font-size: 80px;
+  font-weight: normal;
+  text-shadow: rgb(90, 0, 0) 2px 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 0px;
+}
+
+.glow {
+  text-shadow: #ffcc00 1px 0 10px;
+}
