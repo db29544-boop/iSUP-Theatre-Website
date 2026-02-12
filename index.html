@@ -5,32 +5,68 @@
   <meta charset="UTF-8">
   <title>My First Webpage</title>
   <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+<script src="https://unpkg.com/feather-icons"></script>
 
 <body>
   <div class="container">
     <nav>
+      <i class="top-bar-mobile" color="white" data-feather="menu"></i>
       <a class="nav-link" href="index.html">Home</a>
       <a class="nav-link" href="about.html">Who are we?</a>
       <a class="nav-link" href="cast.html">Cast and Crew</a>
-      <a class="nav-link" href="link goes here">Buy Tickets</a>
+      <p class="top-bar-mobile">💔</p>
+      <a class="nav-link-buy-tickets" href="link goes here">Buy Tickets</a>
     </nav>
     <div class="content-container">
-      <img src="assets/drama-club-900x600.png" />
-      <div class="overlay">
-        <div class="text-container text">
-          <h3 class="presents-text">iSUP Theater Club Presents the</h3>
-          <h1 class="hero-text glow">9 Worst Breakups</h1>
-          <h3 class="presents-text">Of All Time</h3>
+      <div class="overlay-image-container">
+        <img src="assets/drama-club-900x600.png" class="hero-image" />
+        <div class="overlay">
+          <div class="overlay-container">
+            <div class="text-container text">
+              <h3 class="presents-text">iSUP Theater Club Presents the</h3>
+              <h1 class="hero-text glow">9 Worst Breakups</h1>
+              <h3 class="presents-text">Of All Time</h3>
+            </div>
+            <button class="ticket-button">
+              <img src="assets/ticket-button.png" class="button-img" />
+              <p class="button-text">Buy Tickets Now</p>
+            </button>
+          </div>
         </div>
-        <button class="ticket-button">
-          Buy Tickets Now
-        </button>
+        <div class="image-container"></div>
       </div>
+      <div class="summary-container">
+        <h1 class="text">Details</h1>
+        <div class="image-text-container">
+          <img class="summary-image" src="assets/drama-club-900x600.png" />
+          <p class="text summary-text">Eve: Feb, 27th and 28th, a legendary production about love, tragedy, and breakups
+            through history will be brought to you by iSchool Theatre Club!
+            <br>
+            <br>
+            Katie: Wait? Really? Where is this?
+            <br>
+            <br>
+            Eve: The Blackbox Theatre!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <p class="close-button text">X</p>
+      <a class="nav-link-mobile text" href="index.html">Home</a>
+      <a class="nav-link-mobile text" href="about.html">Who are we?</a>
+      <a class="nav-link-mobile text" href="cast.html">Cast and Crew</a>
+      <a class="nav-link-mobile text" href="link-goes-here">Buy Tickets</a>
     </div>
   </div>
 </body>
 <script>
+  feather.replace();
+</script>
+
+<script src="nav.js">
 
 </script>
 

@@ -4,18 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <title>My First Webpage</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+<script src="https://unpkg.com/feather-icons"></script>
 
 <body>
   <div class="container">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">Who are we?</a>
-      <a href="cast.html">Cast and Crew</a>
-      <a href="link goes here">Buy Tickets</a>
+      <i class="top-bar-mobile" color="white" data-feather="menu"></i>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">Who are we?</a>
+      <a class="nav-link" href="cast.html">Cast and Crew</a>
+      <p class="top-bar-mobile">💔</p>
+      <a class="nav-link-buy-tickets" href="link goes here">Buy Tickets</a>
     </nav>
   </div>
+  <div class="sidebar">
+    <p class="close-button text">X</p>
+    <a class="nav-link-mobile text" href="index.html">Home</a>
+    <a class="nav-link-mobile text" href="about.html">Who are we?</a>
+    <a class="nav-link-mobile text" href="cast.html">Cast and Crew</a>
+    <a class="nav-link-mobile text" href="link-goes-here">Buy Tickets</a>
+  </div>
 </body>
+<script>
+  feather.replace();
+</script>
+
+<script src="nav.js"></script>
 
 </html>
