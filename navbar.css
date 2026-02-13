@@ -12,7 +12,6 @@ body {
   min-height: 100vh;
   margin: 0px;
   z-index: 0;
-  background-color: black;
 }
 
 nav {
@@ -80,6 +79,11 @@ nav {
 
 .text {
   color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.black-text {
+  color: rgb(0, 0, 0);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
