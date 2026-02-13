@@ -6,6 +6,7 @@
 
 body {
   background-color: #ffdfa3;
+  overflow: visible;
 }
 
 .hero-image {
