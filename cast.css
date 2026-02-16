@@ -1,3 +1,140 @@
 body {
   background-color: #ffdfa3;
 }
+
+.header-text {
+  text-align: center;
+}
+
+.cast-grid {
+  display: grid;
+  width: 80%;
+  /* min-height: 80vh; */
+  height: fit-content;
+  margin: 30px auto;
+
+  /* 5 fixed rows */
+  grid-template-rows: repeat(5, 1fr);
+
+  /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  /* Center items inside each cell */
+  justify-items: center;
+  align-items: center;
+
+  gap: 10px
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  cursor: pointer
+}
+
+.card-text {
+  background-color: white;
+  padding: 5px;
+  font-weight: bold;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.person-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  background-color: #ffdfa3;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: rgba(0, 0, 0, 0.409);
+}
+
+.mobile-container {
+  display: none;
+}
+
+.image-text-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px;
+}
+
+.name-modal-text {
+  margin: 20px;
+}
+
+.close-button-modal {
+  border-radius: 1000px;
+  padding: 10px;
+  background-color: #b20101;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 95%;
+  cursor: pointer;
+}
+
+.image-modal {
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .mobile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100vw;
+    margin-bottom: 50px;
+  }
+
+  .mobile-child {
+    width: 80%;
+    background-color: #b10101;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .cast-grid {
+    display: none;
+  }
+
+  .details-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .mobile-image {
+    width: 200px;
+  }
+}
