@@ -51,6 +51,8 @@ body {
 .card-image {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .person-modal {
@@ -89,6 +91,10 @@ body {
   margin: 20px;
 }
 
+.mobile-desc {
+  text-align: center;
+}
+
 .close-button-modal {
   border-radius: 1000px;
   padding: 10px;
@@ -102,7 +108,13 @@ body {
 }
 
 .image-modal {
-  width: 70%;
+  width: 45%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.cast-note {
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -136,5 +148,10 @@ body {
 
   .mobile-image {
     width: 200px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    /* Applies a full grayscale filter */
+
+    /* For older webkit browsers */
   }
 }
